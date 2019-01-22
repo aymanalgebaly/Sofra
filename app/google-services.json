@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "603637566079",
+    "firebase_url": "https://notifcation-6bf8e.firebaseio.com",
+    "project_id": "notifcation-6bf8e",
+    "storage_bucket": "notifcation-6bf8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603637566079:android:4b1f48306c635866",
+        "android_client_info": {
+          "package_name": "com.example.android.sofraa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603637566079-65294f361vs3u952aghnt460vdnoacin.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.sofraa",
+            "certificate_hash": "68267e6360d93878e55014fe30b53ae01db9eb87"
+          }
+        },
+        {
+          "client_id": "603637566079-e8j8rsgon9cuarvf7mr5hutu7h116mfg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2rAbiPD-WkWJyajWr46GwF_WngERfHZI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603637566079-e8j8rsgon9cuarvf7mr5hutu7h116mfg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603637566079:android:1f6c1f7e1593202b",
+        "android_client_info": {
+          "package_name": "com.ipda3.notifcation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603637566079-e8j8rsgon9cuarvf7mr5hutu7h116mfg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2rAbiPD-WkWJyajWr46GwF_WngERfHZI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

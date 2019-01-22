@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.shop.VpMyOrdersShopFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/R0"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.2" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.9" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.2" />
+
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.58" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.3" />
+
+
+            <ImageView
+                android:id="@+id/shop_foodList_img"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline51"
+                app:layout_constraintEnd_toStartOf="@+id/guideline53"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline50"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+            <TextView
+                android:id="@+id/shop_foodList_shopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:text="تاج الفطيرة الدمشقية"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline55"
+                app:layout_constraintStart_toStartOf="@+id/guideline53"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/shop_foodList_shopDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="البرجر, السندوتشات, مشروبات"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline53"
+                app:layout_constraintTop_toTopOf="@+id/guideline55" />
+
+            <RatingBar
+                android:id="@+id/shop_foodList_rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="@color/yellow"
+                android:stepSize="1"
+                app:layout_constraintStart_toStartOf="@+id/guideline53"
+                app:layout_constraintTop_toBottomOf="@+id/shop_foodList_shopDesc" />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/minimum_to_order"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline54"
+                app:layout_constraintTop_toTopOf="@+id/guideline55" />
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/delevry_cost"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline54"
+                app:layout_constraintTop_toBottomOf="@+id/textView60" />
+
+
+            <TextView
+                android:id="@+id/shop_foodList_lowest_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="60 ريال"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.241"
+                app:layout_constraintStart_toEndOf="@+id/textView60"
+                app:layout_constraintTop_toTopOf="@+id/guideline55" />
+
+            <TextView
+                android:id="@+id/shop_foodList_delevry_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="10 ريال"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView70"
+                app:layout_constraintTop_toBottomOf="@+id/shop_foodList_lowest_order" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/R1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/R0">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/shop_foodList_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                app:tabGravity="fill"
+                app:tabMode="fixed">
+
+            </android.support.design.widget.TabLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/R1">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/shop_foodList_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

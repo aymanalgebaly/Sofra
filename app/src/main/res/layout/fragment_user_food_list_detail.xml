@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    tools:context=".ui.fragments.user.UserFoodListDetailFrag">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/edite_special_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline1024"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.0" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline1025"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.20" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline10056"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <ImageView
+                android:id="@+id/checked_img"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintBottom_toTopOf="@+id/guideline1025"
+                app:layout_constraintEnd_toStartOf="@+id/guideline1027"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline1026"
+                app:layout_constraintTop_toTopOf="@+id/guideline1024" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline1026"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="57dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline1027"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.8" />
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline1030"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.38" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline1031"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.45" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline1032"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline1033"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.65" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline1034"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.75" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline1035"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent=".9" />
+
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline1028"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline10288"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline1029"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.01" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline1069"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.4" />
+
+            <TextView
+                android:id="@+id/text_checked_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:text="سندوتش برجر تركي"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtView_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/guideline1028"
+                app:layout_constraintTop_toTopOf="@+id/guideline1025" />
+
+
+            <TextView
+                android:id="@+id/text_checked_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="سندوتش راب محشي بالدجاج الحار اللذيذ"
+                app:layout_constraintBottom_toTopOf="@+id/guideline1030"
+                app:layout_constraintEnd_toStartOf="@+id/guideline1027"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline1028"
+                app:layout_constraintTop_toTopOf="@+id/guideline10056"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/text_checked_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/salary"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10288"
+                app:layout_constraintTop_toTopOf="@+id/guideline10056" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="40$"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10288"
+                app:layout_constraintTop_toBottomOf="@+id/text_checked_price" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline1030">
+
+            </View>
+
+            <TextView
+                android:id="@+id/text_checked_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/order_time"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline1031"
+                app:layout_constraintStart_toStartOf="@+id/guideline1028"
+                app:layout_constraintTop_toTopOf="@+id/guideline1030" />
+
+            <TextView
+                android:id="@+id/checked_text_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="50 min"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline1031"
+                app:layout_constraintStart_toStartOf="@+id/guideline1069"
+                app:layout_constraintTop_toTopOf="@+id/guideline1030" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline1031"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </View>
+
+
+            <TextView
+                android:id="@+id/text_special_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/special_order"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline1032"
+                app:layout_constraintStart_toStartOf="@+id/guideline1028"
+                app:layout_constraintTop_toTopOf="@+id/guideline1031"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/txt_content"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/strok"
+                android:gravity="start"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline1033"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline1032" />
+
+            <TextView
+                android:id="@+id/text_many_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/quantity"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline1034"
+                app:layout_constraintStart_toStartOf="@+id/guideline1028"
+                app:layout_constraintTop_toTopOf="@+id/guideline1033"
+                app:layout_constraintVertical_bias="0.315" />
+
+            <Button
+                android:id="@+id/min_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/green"
+                android:text="-"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/guideline1034"
+                app:layout_constraintStart_toEndOf="@+id/text_number"
+                app:layout_constraintTop_toTopOf="@+id/guideline1033"
+                app:layout_constraintVertical_bias="0.866" />
+
+            <TextView
+                android:id="@+id/text_number"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/strok"
+                android:gravity="center"
+                android:text="1"
+                app:layout_constraintBottom_toTopOf="@+id/guideline1034"
+                app:layout_constraintStart_toEndOf="@+id/plus_btn"
+                app:layout_constraintTop_toTopOf="@+id/guideline1033"
+                app:layout_constraintVertical_bias="0.565" />
+
+            <Button
+                android:id="@+id/plus_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/green"
+                android:text="+"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/guideline1034"
+                app:layout_constraintStart_toEndOf="@+id/text_many_title"
+                app:layout_constraintTop_toTopOf="@+id/guideline1033"
+                app:layout_constraintVertical_bias="0.571" />
+
+            <Button
+                android:id="@+id/add_basket_btn"
+                android:layout_width="309dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_redial"
+                android:drawableRight="@mipmap/bag_icon"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="اضف الي السلة"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline1035"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10288"
+                app:layout_constraintStart_toStartOf="@+id/guideline1028"
+                app:layout_constraintTop_toTopOf="@+id/guideline1034"
+                app:layout_constraintVertical_bias="1.0"
+                android:drawableEnd="@mipmap/bag_icon"
+                android:paddingEnd="10dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

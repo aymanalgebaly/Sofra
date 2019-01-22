@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/home"
+            android:icon="@mipmap/home_icon"
+            android:title="الصفحة الرئيسية" />
+        <item
+            android:id="@+id/orders"
+            android:icon="@mipmap/orders_products"
+            android:title="طلباتي" />
+        <item
+            android:id="@+id/notification"
+            android:icon="@mipmap/notifications_icon"
+            android:title="التنبيهات" />
+        <item
+            android:id="@+id/new_offers"
+            android:icon="@mipmap/offers_icon"
+            android:title="جديد العروض" />
+
+
+        <item
+            android:id="@+id/about_app"
+            android:icon="@mipmap/about_app_icon"
+            android:title="عن التطبيق" />
+        <item
+            android:id="@+id/condition"
+            android:icon="@mipmap/conditions_icon"
+            android:title="الشروط و الاحكام" />
+        <item
+            android:id="@+id/share"
+            android:icon="@mipmap/share_icon"
+            android:title="شارك التطبيق">
+
+        </item>
+        <item
+            android:id="@+id/contact_us"
+            android:icon="@mipmap/contact_us_icon"
+            android:title="تواصل معنا">
+
+        </item>
+    </group>
+
+</menu>

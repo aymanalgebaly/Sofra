@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.UserRegisterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/rel_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/user_register_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/strok"
+                android:hint="@string/name"
+                android:textSize="@dimen/data_entry"
+                android:paddingStart="10dp"
+                android:paddingLeft="5dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="5dp"
+                android:textColorHint="@color/gray" />
+
+            <EditText
+                android:id="@+id/user_register_email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/user_register_name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/strok"
+                android:hint="@string/email"
+                android:textSize="@dimen/data_entry"
+                android:paddingStart="10dp"
+                android:paddingLeft="5dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="5dp"
+                android:textColorHint="@color/gray" />
+
+            <EditText
+                android:id="@+id/edite_phone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/user_register_email"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/strok"
+                android:hint="@string/phone"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/gray" />
+
+            <Spinner
+                android:id="@+id/user_register_spinner_city"
+                style="@style/SpinnerTheme"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/edite_phone"
+                android:layout_alignTop="@+id/edite_phone"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="51dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <Spinner
+                android:id="@+id/user_register_spinner_region"
+                style="@style/SpinnerTheme"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/user_register_spinner_city"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="المنطقه"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/gray" />
+
+            <EditText
+                android:id="@+id/user_register_address"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/user_register_spinner_region"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/strok"
+                android:hint="@string/address"
+                android:textSize="@dimen/data_entry"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/gray" />
+
+            <EditText
+                android:id="@+id/user_register_pass"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/user_register_address"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/strok"
+                android:hint="@string/password"
+                android:textSize="@dimen/data_entry"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/gray" />
+
+            <EditText
+                android:id="@+id/user_register_confirm_pass"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/user_register_pass"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/strok"
+                android:hint="@string/confirm_pass"
+                android:textSize="@dimen/data_entry"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/gray" />
+
+            <Button
+                android:id="@+id/user_register_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_register_confirm_pass"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/green"
+                android:text="التالي"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtView_size"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

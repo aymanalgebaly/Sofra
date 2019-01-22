@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/home_icon"
+            android:title="الصفحة الرئيسية" />
+
+        <item
+            android:id="@+id/nav_singin"
+            android:icon="@mipmap/settings_icon"
+            android:title="تسجبل الدخول"/>
+        <item
+            android:id="@+id/nav_products"
+            android:icon="@mipmap/notifications_icon"
+            android:title="منتجاتى" />
+        <item
+            android:id="@+id/nav_offerProducts"
+            android:icon="@mipmap/notifications_icon"
+            android:title="الطلبات المقدمة" />
+        <item
+            android:id="@+id/nav_comission"
+            android:icon="@mipmap/comission_icon"
+            android:title="العمولة" />
+
+        <item
+            android:id="@+id/nav_offers"
+            android:icon="@mipmap/offers_icon"
+            android:title="عروضي" />
+
+        <item
+            android:id="@+id/nav_aboutApp"
+            android:icon="@mipmap/about_app_icon"
+            android:title="عن التطبيق" />
+
+        <item
+            android:id="@+id/nav_conditions"
+            android:icon="@mipmap/conditions_icon"
+            android:title="الشروط والأحكام" />
+
+        <item
+            android:id="@+id/nav_shareApp"
+            android:icon="@mipmap/share_icon"
+            android:title="شارك التطبيق" />
+
+        <item
+            android:id="@+id/nav_contactUs"
+            android:icon="@mipmap/contact_us_icon"
+            android:title="تواصل معنا" />
+
+    </group>
+
+
+</menu>
